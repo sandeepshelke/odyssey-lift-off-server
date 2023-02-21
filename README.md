@@ -1,4 +1,4 @@
-# Odyssey Lift-off server with completed all steps
+# Odyssey Lift-off server
 
 Welcome to Odyssey Lift-off server. This is code along completed repo for all five parts
 - [Basics](https://www.apollographql.com/tutorials/lift-off-part1)
