@@ -6,6 +6,8 @@ type Query {
     tracksForHome: [Track!]!
     "Get a specific track for given non null id"
     track(id: ID!): Track
+    "Fetch a specific module, provided a module's ID"
+    module(id: ID!): Module!
 }
 
 type Mutation {
@@ -55,6 +57,10 @@ type Module {
     length: Int @deprecated(reason: "Use durationInSeconds")
     "The module's video duration, in seconds"
     durationInSeconds: Int
+    "The module's text-based description, can be in markdown format. In case of a video, it will be the enriched transcript"
+    content: String
+    "The module's video url, for video-based modules"
+    videoUrl: String
 }
 
 "Author of a complete Track or a Module"
